@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         val cost = stringInTextField.toDoubleOrNull()
         if (cost == null || cost == 0.0) {
             displayTip(0.0)
-            return
+            return //test
         }
         val tipPercentage = when (binding.tipOptions.checkedRadioButtonId) {
             R.id.option_twenty_percent -> 0.20
